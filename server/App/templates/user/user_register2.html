@@ -1,0 +1,43 @@
+{% extends 'user/user_register.html' %}
+
+
+{% block content %}
+    {{ super() }}
+    <h1>二次填坑</h1>
+
+
+    <hr>
+
+    {% from 'html_fun.html' import hehe %}
+
+    {{ hehe("Tom") }}
+    {{ hehe("Rock") }}
+
+    {% from 'html_fun.html' import goods %}
+
+    {{ goods() }}
+    {{ goods() }}
+    {{ goods() }}
+
+    <hr>
+
+    {% for user in users %}
+        {% if loop.first %}
+            <li style="color: red">{{ loop.index }}:{{ loop.index0 }}:{{ user }}</li>
+            {% elif loop.last %}
+            <li style="color: green">{{ loop.index }}:{{ loop.index0 }}:{{ user }}</li>
+            {% else %}
+            <li style="color: yellow">{{ loop.index }}:{{ loop.index0 }}:{{ user }}</li>
+
+        {% endif %}
+    {% endfor %}
+
+    <hr>
+
+    <h1>{{ msg|capitalize }}</h1>
+    <h1>{{ msg|lower }}</h1>
+    <h1>{{ msg|upper }}</h1>
+    <h1>{{ msg|reverse }}</h1>
+
+
+{% endblock %}
