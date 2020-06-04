@@ -1,4 +1,4 @@
-from .neural_network import NetModel
+#from .neural_network import NetModel
 
 
 def init_net(net_name="cnn_4_99.pth"):
