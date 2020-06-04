@@ -1,5 +1,4 @@
 pandas
-torchtext
 flask==1.1.2
 scikit-learn==0.22.2.post1
 flask-Bootstrap
