@@ -1,4 +1,3 @@
-torch
 pandas
 torchtext
 flask==1.1.2
