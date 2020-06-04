@@ -1,4 +1,12 @@
 torch
 pandas
 torchtext
-flask
+flask==1.1.2
+scikit-learn==0.22.2.post1
+flask-Bootstrap
+flask-Migrate
+flask-Script
+flask-Session
+flask-SQLAlchemy
+jieba
+
